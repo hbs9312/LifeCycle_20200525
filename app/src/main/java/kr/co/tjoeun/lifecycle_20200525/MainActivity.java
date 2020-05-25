@@ -48,4 +48,10 @@ public class MainActivity extends BaseActivity {
     public void setValues() {
 
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("생명주기확인", "onPause 실행");
+    }
 }
